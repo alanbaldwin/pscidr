@@ -8,7 +8,12 @@ It is intended to be used with Deployment scripts to maximize the automation of 
 ```pwsh
 . ./base.ps1
 
-$x = Get-CidrSubnet -cidr "10.0.0.0/16" -extraBits 2 -count 2
+sh> $x = Get-CidrSubnet -cidr "10.0.0.0/16" -extraBits 2 -count 2
+
+sh> $x.CidrBlock
+
+10.0.128.0/18
+
 
 ```
 
